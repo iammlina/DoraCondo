@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: f4f6ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="condo.dora.controllers.AddRoomAndResident">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="120.0" layoutX="14.0" layoutY="46.0">
+         <image>
+            <Image url="@logo/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="99.0" layoutX="134.0" layoutY="14.0">
+         <image>
+            <Image url="@logo/residented.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="174.0" fitWidth="235.0" layoutX="45.0" layoutY="180.0">
+         <image>
+            <Image url="@pic/addresident.PNG" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nameTf" alignment="CENTER" layoutX="400.0" layoutY="95.0" prefHeight="51.0" prefWidth="336.0" promptText="Name" style="-fx-background-color: transparent; -fx-background-color: #595b83;">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailTf" alignment="CENTER" layoutX="400.0" layoutY="171.0" prefHeight="51.0" prefWidth="336.0" promptText="Email" style="-fx-background-color: transparent; -fx-background-color: #808b97;">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="telTf" alignment="CENTER" layoutX="400.0" layoutY="246.0" prefHeight="51.0" prefWidth="336.0" promptText="Tel." style="-fx-background-color: transparent; -fx-background-color: #4f8a8b;">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="roomNum" alignment="CENTER" layoutX="400.0" layoutY="320.0" prefHeight="49.0" prefWidth="188.0" promptText="Room Number" style="-fx-background-color: transparent; -fx-background-color: fbd46d;">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </TextField>
+      <Button layoutX="676.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleEnterBtnResidentOnAction" prefHeight="49.0" prefWidth="51.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="50.0">
+               <image>
+                  <Image url="@icon/enter.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="6.0" layoutY="421.0" mnemonicParsing="false" onAction="#handleBackBtnOnAction" prefHeight="61.0" prefWidth="42.0" style="-fx-background-color: transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="57.0" fitWidth="58.0">
+               <image>
+                  <Image url="@icon/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="totalTf" alignment="CENTER" layoutX="600.0" layoutY="320.0" prefHeight="49.0" prefWidth="136.0" promptText="Total Number" style="-fx-background-color: transparent; -fx-background-color: e8e8e8;">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

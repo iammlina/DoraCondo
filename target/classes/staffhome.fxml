@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: fcf8e8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="condo.dora.controllers.StaffHome">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="807.0" prefWidth="249.0" style="-fx-background-color: ffe277;">
+         <children>
+            <ImageView fitHeight="128.0" fitWidth="194.0" layoutX="28.0" layoutY="42.0">
+               <image>
+                  <Image url="@logo/logo.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="6.0" arcWidth="5.0" fill="#ffe277" height="45.0" layoutX="18.0" layoutY="367.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.5" width="210.0" />
+            <Button layoutX="15.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleChangePasswordBtnOnAction" prefHeight="36.0" prefWidth="163.0" style="-fx-background-color: transparent;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="197.0">
+                     <image>
+                        <Image url="@logo/changepass.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="42.0" layoutY="230.0" text="Hi !">
+               <font>
+                  <Font name="Gabriola" size="68.0" />
+               </font>
+            </Label>
+            <Label fx:id="staffLb" alignment="CENTER" layoutX="120.0" layoutY="313.0" text="Label" textFill="#a04beb">
+               <font>
+                  <Font name="Gabriola" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="searchBtn" layoutX="42.0" layoutY="625.0" mnemonicParsing="false" onAction="#handleSearchBtnOnAction" prefHeight="128.0" prefWidth="129.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="145.0" fitWidth="144.0">
+                     <image>
+                        <Image url="@icon/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="importBtn" layoutX="358.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleImportBtnOnAction" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="190.0" fitWidth="200.0">
+               <image>
+                  <Image url="@pic/importt.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="exportBtn" layoutX="669.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleExportBtnOnAction" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="194.0" fitWidth="200.0">
+               <image>
+                  <Image url="@pic/exportt.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="concludeBtn" layoutX="875.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleConcludeBtnOnAction" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="90.0" fitWidth="94.0">
+               <image>
+                  <Image url="@icon/documents.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="logoutBtn" layoutX="916.0" layoutY="725.0" mnemonicParsing="false" onAction="#handleLogoutBtnOnAction" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="50.0">
+               <image>
+                  <Image url="@icon/logout2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>
